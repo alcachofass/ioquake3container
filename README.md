@@ -6,23 +6,22 @@ An ioquake3 server running in a Docker Container.
 
 ## Directory Layout:
 
->.
->├── baseq3
->│   ├── pak0.pk3
->│   ├── pak1.pk3
->│   ├── pak2.pk3
->│   ├── pak3.pk3
->│   ├── pak4.pk3
->│   ├── pak5.pk3
->│   ├── pak6.pk3
->│   ├── pak7.pk3
->│   └── pak8.pk3
->├── Dockerfile
->├── missionpack
->│   ├── pak1.pk3
->│   ├── pak2.pk3
->│   └── pak3.pk3
->└── serversetup.cfg
+- baseq3/
+    pak0.pk3
+    pak1.pk3
+    pak2.pk3
+    pak3.pk3
+    pak4.pk3
+    pak5.pk3
+    pak6.pk3
+    pak7.pk3
+    pak8.pk3
+- Dockerfile
+- missionpack/
+    pak1.pk3
+    pak2.pk3
+    pak3.pk3
+- serversetup.cfg
 
 2 directories, 14 files
 
