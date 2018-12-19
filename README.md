@@ -27,7 +27,7 @@ An ioquake3 server running in a Docker Container.
 
 ## Docker Actions:
 
-docker build -t myq3a .
-docker run -p 27960:27960/udp -it myq3a
+* docker build -t myq3a .
+* docker run -p 27960:27960/udp -it myq3a
 
 
