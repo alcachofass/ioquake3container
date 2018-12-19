@@ -22,12 +22,17 @@ An ioquake3 server running in a Docker Container.
     * pak2.pk3
     * pak3.pk3
 4. serversetup.cfg
+5. ctfserversetup.cfg
 
-2 directories, 14 files
+(2 directories, 15 files)
 
 ## Docker Actions:
+### (NOTE: Base container will default to FFA game type [+exec serversetup.cfg])
 
 * docker build -t myq3a .
 * docker run -p 27960:27960/udp -it myq3a
+*   or
+* docker run -p 27960:27960/udp -it myq3a ctfserversetup.cfg
 
+Additional *.cfg files could be copied to be referenced via command line at launch or in-game.
 
