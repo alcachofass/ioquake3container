@@ -26,7 +26,7 @@ COPY missionpack/pak2.pk3 /usr/lib/ioquake3/missionpack
 COPY missionpack/pak3.pk3 /usr/lib/ioquake3/missionpack
 
 # We copy a basic server configuration 
-copy serversetup.cfg /usr/lib/ioquake3/baseq3
+COPY serversetup.cfg /usr/lib/ioquake3/baseq3
 
 ENTRYPOINT ["/usr/lib/ioquake3/ioq3ded","+exec"]
 CMD ["serversetup.cfg"]
