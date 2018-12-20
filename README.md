@@ -32,7 +32,7 @@ An ioquake3 server running in a Docker Container.
 
 * docker build -t myq3a .
 * docker run -p 27960:27960/udp -it myq3a
-*   or in the case of CTF
+  * or in the case of CTF
 * docker run -p 27960:27960/udp -it myq3a ctfserversetup.cfg
 
 ## Docker Compose
