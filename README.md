@@ -17,22 +17,28 @@ An ioquake3 server running in a Docker Container.
     * pak7.pk3
     * pak8.pk3
 2. Dockerfile
-3. missionpack/
+3. docker-compose.yml
+4. missionpack/
     * pak1.pk3
     * pak2.pk3
     * pak3.pk3
-4. serversetup.cfg
-5. ctfserversetup.cfg
+5. serversetup.cfg
+6. ctfserversetup.cfg
 
-(2 directories, 15 files)
+(2 directories, 16 files)
 
 ## Docker Actions:
 ### (NOTE: Base container will default to FFA game type [+exec serversetup.cfg])
 
 * docker build -t myq3a .
 * docker run -p 27960:27960/udp -it myq3a
-*   or
+*   or in the case of CTF
 * docker run -p 27960:27960/udp -it myq3a ctfserversetup.cfg
 
-Additional *.cfg files could be copied to be referenced via command line at launch or in-game.
+## Docker Compose
+### (NOTE: Compose file will launch a FFA & a CTF container on 27960 & 27961. Modify to suit your needs)
+* docker-compose up
+
+## Other Notes
+Additional *.cfg files could be copied at build time to be referenced via command line at launch or in-game.
 
