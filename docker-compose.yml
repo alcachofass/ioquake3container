@@ -1,0 +1,12 @@
+version: '3'
+services:
+ FFA:
+    image: myq3a
+    ports:
+      - "27960:27960/udp"
+ CTF:
+    image: myq3a
+    entrypoint: ["/usr/lib/ioquake3/ioq3ded","+exec","ctfserversetup.cfg"]
+    ports:
+      - "27961:27960/udp"
+
