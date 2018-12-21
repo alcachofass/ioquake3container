@@ -27,6 +27,11 @@ COPY missionpack/pak3.pk3 /usr/lib/ioquake3/missionpack
 
 # We copy a basic server configuration 
 COPY serversetup.cfg /usr/lib/ioquake3/baseq3
+COPY ctfserversetup.cfg /usr/lib/ioquake3/baseq3
+
+RUN adduser --disabled-password q3user_svc
+
+USER q3user_svc
 
 ENTRYPOINT ["/usr/lib/ioquake3/ioq3ded","+exec"]
 CMD ["serversetup.cfg"]
