@@ -39,9 +39,9 @@ or in the case of CTF:
 * docker run -p 27960:27960/udp -it myq3a ctfserversetup.cfg
 
 ## Docker Compose
-### (NOTE: docker-compose.yml file will launch a FFA & a CTF container on 27960 & 27961. The second compose file launches the OSP mod and Team Arena. Modify to suit your needs)
+### (NOTE: docker-compose.yml file will launch a FFA & a CTF container on 27960 & 27961)
 * docker-compose up -d
 
 ## Other Notes
-Additional *.cfg files could be copied at build time to be referenced via command line at launch or in-game. docker-compose2.yml shows how to launch mods (OSP & Team Arena) with the use of docker volumes and a launch script. The later is a more efficient way to handle container size and disk usage. 
+Additional *.cfg files could be copied at build time to be referenced via command line at launch or in-game. Reference docker-compose2.yml, Dockerfile2, and launcher.sh for an example on how to launch mods (OSP & Team Arena) using docker volumes and a launch script. 
 
