@@ -43,5 +43,5 @@ or in the case of CTF:
 * docker-compose up -d
 
 ## Other Notes
-Additional *.cfg files could be copied at build time to be referenced via command line at launch or in-game. Reference docker-compose2.yml, Dockerfile2, and launcher.sh for an example on how to launch mods (OSP & Team Arena) using docker volumes and a launch script. 
+Additional *.cfg files could be copied at build time to be referenced via command line at launch or in-game. Reference docker-compose2.yml, Dockerfile2, launcher.sh, and launcher2.sh for an example on how to launch mods (OSP & Team Arena) using docker volumes and launch scripts. 
 
