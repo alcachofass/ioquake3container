@@ -2,7 +2,7 @@
 
 An ioquake3 server running in a Docker Container.
 
-*.pk3 files are NOT included here. These come from the Quake 3 Arena CD, Team Arena CD, and Point Release 1.32. These files should exist in /baseq3 and /missionpack directories prior to building the image. 
+*.pk3 files are NOT included here. These come from the Quake 3 Arena CD, Team Arena CD, and Point Release 1.32. These files should exist in /baseq3 and /missionpack directories prior to building the image. Team Arena files are not required to run a regular FFA or CTF match.
 
 ## Directory Layout:
 
@@ -41,5 +41,5 @@ An ioquake3 server running in a Docker Container.
 * docker-compose up
 
 ## Other Notes
-Additional *.cfg files could be copied at build time to be referenced via command line at launch or in-game.
+Additional *.cfg files could be copied at build time to be referenced via command line at launch or in-game. docker-compose2.yml shows how to launch mods (OSP & Team Arena) with the use of docker volumes and a launch script.
 
