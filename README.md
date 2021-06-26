@@ -33,12 +33,14 @@ An ioquake3 server running in a Docker Container.
 
 * docker build -t myq3a .
 * docker run -p 27960:27960/udp -it myq3a
-  * or in the case of CTF
+
+or in the case of CTF:
+
 * docker run -p 27960:27960/udp -it myq3a ctfserversetup.cfg
 
 ## Docker Compose
 ### (NOTE: Compose file will launch a FFA & a CTF container on 27960 & 27961. Modify to suit your needs)
-* docker-compose up
+* docker-compose up -d
 
 ## Other Notes
 Additional *.cfg files could be copied at build time to be referenced via command line at launch or in-game. docker-compose2.yml shows how to launch mods (OSP & Team Arena) with the use of docker volumes and a launch script.
