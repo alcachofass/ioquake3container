@@ -2,7 +2,7 @@
 
 An ioquake3 server running in a Docker Container.
 
-*.pk3 files are NOT included here. These come from the Quake 3 Arena CD and Point Release 1.32. These files should exist in /baseq3 and /missionpack directories prior to building the image.
+*.pk3 files are NOT included here. These come from the Quake 3 Arena CD, Team Arena CD, and Point Release 1.32. These files should exist in /baseq3 and /missionpack directories prior to building the image. 
 
 ## Directory Layout:
 
@@ -19,6 +19,7 @@ An ioquake3 server running in a Docker Container.
 2. Dockerfile
 3. docker-compose.yml
 4. missionpack/
+    * pak0.pk3
     * pak1.pk3
     * pak2.pk3
     * pak3.pk3
