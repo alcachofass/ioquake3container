@@ -1,0 +1,18 @@
+version: '3'
+services:
+ OSP:
+    image: q3
+    volumes:
+      - /home/user/Docker/q3/baseq3:/usr/lib/ioquake3/baseq3
+      - /home/user/Docker/q3/osp:/usr/lib/ioquake3/osp
+    entrypoint: ["/bin/bash","+exec","/usr/lib/ioquake3/osp/launcher.sh"]
+    ports:
+      - "27960:27960/udp"
+ TA:
+    image: q3
+    volumes:
+      - /home/user/Docker/q3/baseq3:/usr/lib/ioquake3/baseq3
+      - /home/user/Docker/q3/missionpack:/usr/lib/ioquake3/missionpack
+    entrypoint: ["/bin/bash","+exec","/usr/lib/ioquake3/missionpack/launcher.sh"]
+    ports:
+      - "27961:27961/udp"
