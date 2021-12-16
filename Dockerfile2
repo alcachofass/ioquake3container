@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y ioquake3 ioquake3-server
 
-RUN adduser --disabled-password q3user_svc
+RUN useradd -d /home/q3user_svc -m -s /sbin/nologin q3user_svc
 
 USER q3user_svc
 
