@@ -1,12 +1,14 @@
-version: '3'
+version: "3"
+
 services:
- FFA:
-    image: myq3a
+  excessiveplus:
+    image: myq3xp
+    restart: always
     ports:
       - "27960:27960/udp"
- CTF:
-    image: myq3a
-    entrypoint: ["/usr/lib/ioquake3/ioq3ded","+exec","ctfserversetup.cfg"]
-    ports:
-      - "27961:27960/udp"
+    volumes:
+      - "${PWD}/excessiveplus:/usr/lib/ioquake3/excessiveplus"
+      - "${PWD}/baseq3:/usr/lib/ioquake3/baseq3"
+      - "${PWD}/launcher.sh:/usr/lib/ioquake3/launcher.sh"
+      - "${PWD}/.q3a:/home/q3user_svc/.q3a"
 
