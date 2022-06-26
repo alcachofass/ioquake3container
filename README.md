@@ -1,9 +1,12 @@
 # ioquake3container
 
-An ioquake3 server running in a Docker Container.
+An ioquake3 server running in a container.
 
-*.pk3 files are NOT included here. These come from the Quake 3 Arena CD, Team Arena CD, and Point Release 1.32. Check the docker-compose.yml file to see how to mount the directories. 
+*.pk3 files are NOT included here. These come from the Quake 3 Arena CD, Mods, Team Arena CD, and Point Release 1.32. Check the docker-compose.yml file to see how to mount  directories. 
 
+## Building the Container
+
+* docker build -t myq3xp .
 
 ## Volume Mount Explanation
 The only required mounts are your baseq3 folder directory and custom launcher.sh script. 
