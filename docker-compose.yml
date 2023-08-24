@@ -2,7 +2,7 @@ version: "3"
 
 services:
   excessiveplus:
-    image: myq3xp
+    image: myq3srv
     restart: always
     ports:
       - "27960:27960/udp"

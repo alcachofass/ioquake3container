@@ -6,7 +6,7 @@ An ioquake3 server running in a container.
 
 ## Building the Container
 
-* docker build -t myq3xp .
+* docker build -t myq3srv .
 
 ## Volume Mount Explanation
 The only required mounts are your baseq3 folder directory and custom launcher.sh script. 
